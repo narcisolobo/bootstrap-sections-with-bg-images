@@ -13,7 +13,17 @@
       class="navbar navbar-expand-lg navbar-dark bg-faded position-fixed top-0 w-100"
       style="z-index: 100">
       <div class="container">
-        <a href="#" class="navbar-brand">My Cool Site</a>
+        <a href="#home" class="navbar-brand">
+          <div
+            class="logo-back d-inline-block align-middle me-2 mb-1 rounded-5 py-1 px-2">
+            <img
+              src="./images/hedgehog-icon.png"
+              alt="Hedgehog Logo"
+              width="32"
+              class="logo" />
+          </div>
+          My Cool Site
+        </a>
         <button
           class="navbar-toggler"
           data-bs-toggle="collapse"
@@ -23,28 +33,159 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <section
+      id="home"
       class="hero text-light d-flex justify-content-center align-items-center">
       <div class="container text-center">
         <h1>My Cool Site, Bro.</h1>
       </div>
     </section>
     <section
-      class="services text-light d-flex justify-content-center align-items-center">
-      <h2>Subtitle</h2>
+      id="about"
+      class="about text-light d-flex justify-content-center align-items-center">
+      <h2>About</h2>
     </section>
+    <section
+      id="services"
+      class="services d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-light text-center mb-5">Services</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/services1.jpg"
+                alt="Services for Hedgehogs"
+                class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Tummy Rubbing</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  quisquam et sapiente quo eaque necessitatibus delectus
+                  doloremque fugit at earum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/services2.jpg"
+                alt="Services for Hedgehogs"
+                class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Makeovers</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+                  eaque earum assumenda ut ducimus cumque nihil consequuntur
+                  quis odit commodi quia, consequatur dolores, totam a?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/services3.jpg"
+                alt="Services for Hedgehogs"
+                class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Baseball Replacements</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  beatae molestiae perferendis molestias itaque quis
+                  perspiciatis voluptate voluptates ipsum labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact"
+      class="contact text-light d-flex justify-content-center align-items-center">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+          <div class="card-body text-dark">
+            <form>
+              <div class="mb-3">
+                <label for="fullname" class="form-label">Name:</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="comments" class="form-label">Comments:</label>
+                <textarea
+                  name="comments"
+                  id="comments"
+                  class="form-control"></textarea>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container text-secondary">
+        <div class="row py-5">
+          <div class="col">
+            <p><strong>My Cool Website</strong></p>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Dolor sit amet</li>
+              <li>Consectetur adipisicing</li>
+              <li>Elit</li>
+            </ul>
+          </div>
+          <div class="col">
+            <p><strong>Legalese</strong></p>
+            <p>
+              <small>
+                High performance keywords we're ahead of the curve on that one,
+                for marginalised key performance indicators get buy-in, nor low
+                engagement. Dogpile that run it up the flagpole optimize for
+                search, innovation is hot right now. Get six alpha pups in here
+                for a focus group products need full resourcing and support from a
+                cross-functional team in order to be built, maintained, and
+                evolved, yet through the lens of, so lean into that problem.
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

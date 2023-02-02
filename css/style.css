@@ -1,19 +1,34 @@
+.logo {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(273deg)
+    brightness(111%) contrast(101%);
+}
+
+.logo-back {
+  background-color: darkgreen;
+}
+
 section {
   min-height: 100vh;
 }
 
-.hero {
+.hero,
+.services {
   position: relative;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about,
+.contact {
+  background-color: #252525;
 }
 
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/hedgehog.jpg');
+  background-image: url("../images/hedgehog.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -21,23 +36,27 @@ section {
 
 .services {
   position: relative;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .services::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/hedgehog2.jpg');
+  background-image: url("../images/hedgehog2.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
 }
 
 .bg-faded {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #101010;
 }
 
 ::-webkit-scrollbar {
